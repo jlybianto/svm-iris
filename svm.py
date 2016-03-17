@@ -33,7 +33,7 @@ plt.show()
 # MODEL DATA
 # ----------------
 
-svc = svm.SVC(kernel="linear")
+svc = svm.SVC(kernel="linear", C=0.5)
 X = iris.data[0:100, [0,2]]
 y = iris.target[0:100]
 svc.fit(X, y)
